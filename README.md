@@ -7,6 +7,11 @@ current layout every time you switch to another window.
 If you forget to do that, the text you type will come out as gibberish.
 The AutoHotKey script provided here will automatically fix such text.
 
+For example, if you have written *Ιτ ςασ α δαρκ ανδ στορμυ νιγητ* it will replace it with
+*It was a dark and stormy night*.
+If you have written *Mia for;a ki ;enan kair;o* it will replace it with
+*Μια φορά κι έναν καιρό*.
+
 ## Use
 To use a script `#include` the `.ahk` file in your AutoHotKey definitions.
 For example, add a line `#include greek-latin-fix.ahk`.
