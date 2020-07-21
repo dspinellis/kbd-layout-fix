@@ -1,10 +1,10 @@
-# Fix text entered using an the wrong keyboard layout
-To enter text in some languages via a keyboard you press a special key
-combination to toggle the keyboard layout.
+# Auto-correct text entered with the wrong keyboard layout
+To enter text in some languages you press a special key
+combination (e.g. Alt-Shift) to toggle the keyboard layout.
 The keyboard layout context is typically kept separately for each window.
 This is generally good, but forces you to remember (or check) the
-layout every time you switch to another window.
-If you forget to do that they text you type will come out as gibberish.
+current layout every time you switch to another window.
+If you forget to do that, the text you type will come out as gibberish.
 
 ## Use
 To use a script `#include` the `.ahk` file in your AutoHotKey definitions.
@@ -27,6 +27,6 @@ The script
 
 ## Contributing
 The AHK script's creation is automated with a corresponding Python script.
-This process can also be useful for other text that is entered through
-switched keyboard layouts, such as Cyrillic or Hebrew.
+This process can also be useful for text that is entered through
+other switched keyboard layouts, such as Cyrillic or Hebrew.
 Contributions through pull requests are welcomed!
