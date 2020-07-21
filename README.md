@@ -5,11 +5,14 @@ The keyboard layout context is typically kept separately for each window.
 This is generally good, but forces you to remember (or check) the
 current layout every time you switch to another window.
 If you forget to do that, the text you type will come out as gibberish.
+The AutoHotKey script provided here will automatically fix such text.
 
 ## Use
 To use a script `#include` the `.ahk` file in your AutoHotKey definitions.
 For example, add a line `#include greek-latin-fix.ahk`.
-Reload the AutoHotKey definitions and press the corresponding shortcut
+Remember to reload the AutoHotKey definitions.
+To fix some incorrectly typed text, select it,
+and press the corresponding shortcut
 (for Greek-Latin mappings Ctrl-Alt-G).
 
 ## Operation
