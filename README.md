@@ -6,6 +6,13 @@ This is generally good, but forces you to remember (or check) the
 layout every time you switch to another window.
 If you forget to do that they text you type will come out as gibberish.
 
+## Use
+To use a script `#include` the `.ahk` file in your AutoHotKey definitions.
+For example, add a line `#include greek-latin-fix.ahk`.
+Reload the AutoHotKey definitions and press the corresponding shortcut
+(for Greek-Latin mappings Ctrl-Alt-G).
+
+## Operation
 Code in this repository addresses the problem
 by programming [AutoHotKey](https://www.autohotkey.com/) with
 a script that fixes the selected text.
@@ -18,7 +25,8 @@ The script
 * sets the clipboard to the mapped text, and
 * pastes the text to the current selection.
 
+## Contributing
 The AHK script's creation is automated with a corresponding Python script.
-This process can also be useful for other text  that is entered through
+This process can also be useful for other text that is entered through
 switched keyboard layouts, such as Cyrillic or Hebrew.
 Contributions through pull requests are welcomed!
