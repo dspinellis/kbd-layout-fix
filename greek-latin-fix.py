@@ -47,6 +47,7 @@ def main():
     Send ^c
     ClipWait, 0
     str := Clipboard
+    StringCaseSense, On
     if RegExMatch(str, "[a-zA-Z]") != 0 {""")
 
     latin_no_shift = 'abcdefghijklmnopqrstuvwxyz'
