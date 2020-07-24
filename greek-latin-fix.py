@@ -16,7 +16,7 @@
 #
 
 """
-Generate and AutoHotKey script for correcting Greek or Latin text
+Generate an AutoHotKey script for correcting Greek or Latin text
 entered using the wrong keyboard layout.
 """
 
