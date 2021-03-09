@@ -38,3 +38,12 @@ The AHK script's creation is automated with a corresponding Python script.
 This process can also be useful for text that is entered through
 other switched keyboard layouts, such as Cyrillic or Hebrew.
 Contributions through pull requests are welcomed!
+
+## Unix
+
+In the unix/ directory there's a similar in operation bash script for
+X server environments. The script depends on `xsel` and `xdotool`.
+Rather `xsel`, `xclip` can be used instead.
+Then at the tool's call modify argument `-b` to `--selection clipboard`.
+For Wayland environments, `xdotool` can be replaced with `ydotool`
+(environment independent) and for clipboard `wl-clipboard` can be used.
