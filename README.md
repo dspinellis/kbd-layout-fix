@@ -41,9 +41,14 @@ Contributions through pull requests are welcomed!
 
 ## Unix
 
-In the unix/ directory there's a similar in operation bash script for
-X server environments. The script depends on `xsel` and `xdotool`.
+In the [unix/] directory there's a similar in operation bash script for
+X server environments. The script depends on `xsel` and optionally `xdotool`.
+If `xdotool` isn't in `$PATH`, the XA_PRIMARY (selection text) will be read,
+and the result will be saved in XA_CLIPBOARD requiring ^v to replace text.
+If `xdotool` is found, ^c will be issued, then XA_CLIPBOARD will
+be modified with new text and ^v will be issued at the end.
 Rather `xsel`, `xclip` can be used instead.
-Then at the tool's call modify argument `-b` to `--selection clipboard`.
+Then at the tool's call modify argument `-b` to `--selection clipboard`,
+if there is `xdotool` or append `--selection primary` if there isn't.
 For Wayland environments, `xdotool` can be replaced with `ydotool`
 (environment independent) and for clipboard `wl-clipboard` can be used.
